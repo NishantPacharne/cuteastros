@@ -17,11 +17,6 @@ const Layout = ({children}: Props) => {
         <Head>
             <title>cuteastro</title>
             <meta name="description" content="cuteastro" />
-            <link rel="icon" href="/favicon.ico" />
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com"/>
-            <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet"/>
         </Head>
 
         <div className='w-full min-h-screen'>
