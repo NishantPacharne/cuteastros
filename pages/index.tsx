@@ -106,7 +106,7 @@ const Home = (props: ChainProps) => {
               <span>{claimedSupply?.toNumber()}/{""}{(unclaimedSupply?.toNumber() || 0) + (claimedSupply?.toNumber() || 0)}</span>
             </div>
             <div className="card__img mt-3">
-              <Image src="/card.png" alt="cuteastros" className='rounded-lg' layout='responsive' width='100%' height='100%'/>
+              <Image src="/card.png" alt="cuteastros" className='rounded-lg' layout='responsive' width='100%' height='100%' priority={true} placeholder="blur" />
             </div>
             <div className="card__btn mt-3">
               {address ? (
