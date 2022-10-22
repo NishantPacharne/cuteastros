@@ -24,18 +24,20 @@ const Layout = ({children}: Props) => {
             <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Montserrat:wght@700&display=swap" rel="stylesheet"/>
         </Head>
 
-        <nav className='mt-4 mr-10'>
-          <ul className='flex justify-end items-center gap-x-4 body-font'>
-            
-            <li className={`${router.asPath == "/"? 'font-bold text-white': 'text-slate-400'}`}><Link href='/'>mint</Link></li>
-            <li className={`${router.asPath == "/about"? 'font-bold text-white': 'text-slate-400'}`}><Link href="/about">about</Link></li>
-            <li className={`${router.asPath == "/credits"? 'font-bold text-white': 'text-slate-400'}`}><Link href="/credits">credits</Link></li>
-          </ul>
-        </nav>
+        <div className='w-full min-h-screen'>
+            <nav className='mt-4 mr-6'>
+            <ul className='flex justify-end items-center gap-x-4 body-font'>
+                
+                <li className={`${router.asPath == "/"? 'font-bold text-white': 'text-slate-400'}`}><Link href='/'>mint</Link></li>
+                <li className={`${router.asPath == "/about"? 'font-bold text-white': 'text-slate-400'}`}><Link href="/about">about</Link></li>
+                <li className={`${router.asPath == "/credits"? 'font-bold text-white': 'text-slate-400'}`}><Link href="/credits">credits</Link></li>
+            </ul>
+            </nav>
 
-        <main>
-            {children}
-        </main>
+            <main className='min-h-[90vh] flex justify-center'>
+                {children}
+            </main>
+        </div>
     </>
   )
 }

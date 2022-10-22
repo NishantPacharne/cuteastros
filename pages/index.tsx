@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 import { ConnectWallet, useContract, useUnclaimedNFTSupply, useClaimedNFTSupply, useContractMetadata, useAddress, useNetwork, useNetworkMismatch, useActiveClaimCondition } from '@thirdweb-dev/react'
 import { useEffect, useState } from 'react'
 
@@ -97,8 +98,7 @@ const Home = (props: ChainProps) => {
 
   return (
     <>
-      <main>
-        <div className='w-full min-h-screen flex justify-center items-center'>
+        <div className='flex justify-center items-center'>
 
           <div className="mint__card w-[20rem] min-h-[25rem] rounded-lg p-4">
             <div className="card__top flex justify-between items-center">
@@ -106,7 +106,7 @@ const Home = (props: ChainProps) => {
               <span>{claimedSupply?.toNumber()}/{""}{(unclaimedSupply?.toNumber() || 0) + (claimedSupply?.toNumber() || 0)}</span>
             </div>
             <div className="card__img mt-3">
-              <img src="/card.png" alt="cuteastros" className='rounded-lg'/>
+              <Image src="/card.png" alt="cuteastros" className='rounded-lg' layout='responsive' width='100%' height='100%'/>
             </div>
             <div className="card__btn mt-3">
               {address ? (
@@ -136,8 +136,6 @@ const Home = (props: ChainProps) => {
             <span className="font-medium"> {errormsg} </span>
           </div>
         ) : <></>}
-      </main>
-
     </>
   )
 }
