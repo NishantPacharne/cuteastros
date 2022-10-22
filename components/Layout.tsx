@@ -16,7 +16,7 @@ const Layout = ({children}: Props) => {
     <>
         <Head>
             <title>cuteastros</title>
-            <meta name="description" content="cuteastro" />
+            <meta name="description" content="cuteastros is a unique collection of cute astronauts"/>
         </Head>
 
         <div className='w-full min-h-screen'>
