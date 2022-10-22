@@ -15,7 +15,7 @@ const Layout = ({children}: Props) => {
   return (
     <>
         <Head>
-            <title>cuteastro</title>
+            <title>cuteastros</title>
             <meta name="description" content="cuteastro" />
         </Head>
 
