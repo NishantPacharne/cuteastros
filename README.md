@@ -24,3 +24,7 @@ yarn install
 
 ### Thats it! now you can play around and customize the dapp!
 #### ⭐ the repo if you liked it!
+
+---
+
+### I'm open for paid services, contact at hellonishantp@gmail.com
